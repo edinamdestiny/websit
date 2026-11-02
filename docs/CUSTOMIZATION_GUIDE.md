@@ -1,4 +1,4 @@
-# 🛠️ Edinam Destiny Web App — Developer Customization & Maintenance Guide
+# 🛠️ Destiny Recruitment Agency Web App — Developer Customization & Maintenance Guide
 
 This guide provides direct, copy-paste instructions for the most common tasks and modifications.
 

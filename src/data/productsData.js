@@ -20,8 +20,8 @@ export const initialProducts = [
     reviewsCount: 64,
     shortDescAr: "رصيد 20 ساعة مرن يمكن استخدامه على زيارات متعددة (4 أو 5 ساعات لكل زيارة) بصلاحية 60 يوم.",
     shortDescEn: "Flexible 20-hour prepaid credit usable across multiple sessions (4 or 5 hours each) valid for 60 days.",
-    descriptionAr: "وفري أكثر مع باقة الـ 20 ساعة مسبقة الدفع من وكالة إيدينام ديستيني للتوظيف. تتيح لكِ جدولة الزيارات في أي وقت يناسبك بضغطة زر عبر واتساب، مع أولوية اختيار الكوادر وتأمين المواصلات مجاناً في كل زيارة.",
-    descriptionEn: "Save more with our prepaid 20-hour package from Edinam Destiny Recruitment Agency. Schedule visits at your convenience via WhatsApp with priority staff allocation and guaranteed door-to-door transportation included.",
+    descriptionAr: "وفري أكثر مع باقة الـ 20 ساعة مسبقة الدفع من وكالة ديستيني للتوظيف. تتيح لكِ جدولة الزيارات في أي وقت يناسبك بضغطة زر عبر واتساب، مع أولوية اختيار الكوادر وتأمين المواصلات مجاناً في كل زيارة.",
+    descriptionEn: "Save more with our prepaid 20-hour package from Destiny Recruitment Agency. Schedule visits at your convenience via WhatsApp with priority staff allocation and guaranteed door-to-door transportation included.",
     featuresAr: [
       "صلاحية استخدام لمدة شهرين كاملين",
       "إمكانية تقسيم الساعات على 4 أو 5 زيارات",
@@ -73,8 +73,8 @@ export const initialProducts = [
   {
     id: "prod-3",
     slug: "destiny-home-sanitizing-kit",
-    name: "حقيبة المعقمات والمنظفات الفاخرة (إيدينام كير)",
-    nameEn: "Edinam Destiny Luxury Home Sanitization Kit",
+    name: "حقيبة المعقمات والمنظفات الفاخرة (ديستيني كير)",
+    nameEn: "Destiny Luxury Home Sanitization Kit",
     category: "supplies",
     categoryAr: "مواد التنظيف",
     categoryEn: "Supplies",
@@ -90,8 +90,8 @@ export const initialProducts = [
     reviewsCount: 52,
     shortDescAr: "مجموعة متكاملة من المعقمات الطبية ومزيلات الدهون الفرنسية وملمعات الرخام المعتمدة.",
     shortDescEn: "Complete kit of certified hospital-grade sanitizers, kitchen degreasers, and marble polishers.",
-    descriptionAr: "حقيبة المنظفات الاحترافية المعتمدة من وكالة إيدينام ديستيني للتوظيف. تم اختيار مكوناتها بعناية لحماية الأرضيات الرخامية والباركيه مع توفير أعلى درجات التعقيم والروائح المنعشة طويلة الأمد.",
-    descriptionEn: "Professional cleaning essentials curated by Edinam Destiny Recruitment Agency. Formulated specifically to preserve marble and parquet surfaces while delivering hospital-grade disinfection and lasting luxury fragrance.",
+    descriptionAr: "حقيبة المنظفات الاحترافية المعتمدة من وكالة ديستيني للتوظيف. تم اختيار مكوناتها بعناية لحماية الأرضيات الرخامية والباركيه مع توفير أعلى درجات التعقيم والروائح المنعشة طويلة الأمد.",
+    descriptionEn: "Professional cleaning essentials curated by Destiny Recruitment Agency. Formulated specifically to preserve marble and parquet surfaces while delivering hospital-grade disinfection and lasting luxury fragrance.",
     featuresAr: [
       "مطهر ومعقم أسطح طبي برائحة اللافندر (2 لتر)",
       "ملمع رخام وسيراميك حامي للطبقة اللامعة",

@@ -51,7 +51,7 @@ export const Navbar = () => {
           <div className="relative shrink-0">
             <img
               src={isAr ? LOGO_URL_AR : LOGO_URL}
-              alt="Edinam Destiny Recruitment Agency"
+              alt="Destiny Recruitment Agency"
               className="size-12 sm:size-14 rounded-full object-cover border-2 border-accent shadow-md transition-transform group-hover:scale-105"
             />
             {/* Live active dot (Gold) */}
@@ -59,7 +59,7 @@ export const Navbar = () => {
           </div>
           <div className="hidden sm:block">
             <div className="font-display text-lg font-black text-primary leading-tight">
-              {isAr ? 'إيدينام ديستيني' : 'Edinam Destiny'}
+              {isAr ? 'وكالة ديستيني' : 'Destiny Agency'}
             </div>
             <div className="text-[10px] font-semibold text-muted-foreground tracking-wide leading-tight">
               {isAr ? 'وكالة توظيف منزلي' : 'Recruitment Agency'}

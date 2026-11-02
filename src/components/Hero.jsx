@@ -54,12 +54,12 @@ export const Hero = () => {
             <div className="flex items-center gap-4 mb-6">
               <img
                 src={isAr ? LOGO_URL_AR : LOGO_URL}
-                alt="Edinam Destiny Recruitment Agency"
+                alt="Destiny Recruitment Agency"
                 className="size-16 sm:size-20 rounded-full border-2 border-accent shadow-lg object-cover"
               />
               <div>
                 <h2 className="font-display text-lg font-black text-accent-light leading-tight">
-                  {isAr ? 'وكالة إيدينام ديستيني' : 'Edinam Destiny'}
+                  {isAr ? 'وكالة ديستيني' : 'Destiny Agency'}
                 </h2>
                 <p className="text-xs text-white/70 font-semibold">
                   {isAr ? 'للتوظيف المنزلي المحترف' : 'Recruitment Agency · الرياض'}
@@ -89,7 +89,7 @@ export const Hero = () => {
             {/* CTAs */}
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <a
-                href={getWhatsAppLink("مرحباً، أرغب في الاستفسار عن كوادر وكالة إيدينام ديستيني للتوظيف في الرياض")}
+                href={getWhatsAppLink("مرحباً، أرغب في الاستفسار عن كوادر وكالة ديستيني للتوظيف في الرياض")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 min-h-13 rounded-full bg-accent px-7 text-base font-black text-primary shadow-lg hover:bg-accent-light transition-all hover:-translate-y-0.5"

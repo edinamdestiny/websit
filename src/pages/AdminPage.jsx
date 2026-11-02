@@ -330,7 +330,7 @@ export const AdminPage = () => {
                       <td className="p-4 text-center">
                         <div className="flex items-center justify-center gap-2">
                           <a
-                            href={getWhatsAppLink(`مرحباً ${b.customerName}، نتواصل معك بخصوص حجزك (${b.serviceType}) لدى وكالة إيدينام ديستيني للتوظيف بالرياض.`)}
+                            href={getWhatsAppLink(`مرحباً ${b.customerName}، نتواصل معك بخصوص حجزك (${b.serviceType}) لدى وكالة ديستيني للتوظيف بالرياض.`)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="size-8 rounded-lg bg-emerald-50 text-emerald-700 grid place-items-center hover:bg-emerald-100"

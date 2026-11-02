@@ -40,8 +40,8 @@ export const QuickCalculator = () => {
       : (isAr ? 'تنظيف عميق' : 'Deep Cleaning');
 
     const msg = isAr
-      ? `السلام عليكم، أرغب في حجز خدمة عبر وكالة إيدينام ديستيني للتوظيف بالرياض:\n- الخدمة: ${serviceName}\n- الحي: ${districtName}\n- الجنسية المفضلة: ${nationalityText}\n- التقدير: ${estimatedPrice} ريال\nأرجو تأكيد الموعد المتاح.`
-      : `Hello, I'd like to book a service with Edinam Destiny Recruitment Agency (Riyadh):\n- Service: ${serviceName}\n- District: ${districtName}\n- Preferred Nationality: ${nationalityText}\n- Estimate: ${estimatedPrice} SAR\nPlease confirm available slots.`;
+      ? `السلام عليكم، أرغب في حجز خدمة عبر وكالة ديستيني للتوظيف بالرياض:\n- الخدمة: ${serviceName}\n- الحي: ${districtName}\n- الجنسية المفضلة: ${nationalityText}\n- التقدير: ${estimatedPrice} ريال\nأرجو تأكيد الموعد المتاح.`
+      : `Hello, I'd like to book a service with Destiny Recruitment Agency (Riyadh):\n- Service: ${serviceName}\n- District: ${districtName}\n- Preferred Nationality: ${nationalityText}\n- Estimate: ${estimatedPrice} SAR\nPlease confirm available slots.`;
 
     window.open(getWhatsAppLink(msg), '_blank');
   };

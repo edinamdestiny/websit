@@ -45,11 +45,11 @@ export const ShopPage = () => {
     ).join('\n');
 
     const msg = isAr
-      ? `طلب شراء جديد من متجر وكالة إيدينام ديستيني للتوظيف بالرياض:\n\n` +
+      ? `طلب شراء جديد من متجر وكالة ديستيني للتوظيف بالرياض:\n\n` +
         `📦 المنتجات:\n${itemsList}\n\n` +
         `💰 الإجمالي: ${cartTotal} ريال\n` +
         `يرجى تأكيد توفر المنتجات وعنوان التوصيل.`
-      : `New Order from Edinam Destiny Agency Store (Riyadh):\n\n` +
+      : `New Order from Destiny Agency Store (Riyadh):\n\n` +
         `📦 Items:\n${itemsList}\n\n` +
         `💰 Total: ${cartTotal} SAR\n` +
         `Please confirm availability and doorstep delivery.`;

@@ -167,7 +167,7 @@ export const ContactSection = () => {
             </div>
             
             <iframe
-              title={isAr ? "موقع وكالة إيدينام ديستيني — الملقا، الرياض" : "Edinam Destiny Agency location — Al Malqa, Riyadh"}
+              title={isAr ? "موقع وكالة ديستيني للتوظيف — الملقا، الرياض" : "Destiny Recruitment Agency location — Al Malqa, Riyadh"}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115876.3268482436!2d46.54129774627447!3d24.825026941865916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2efd974488be33%3A0xa64b3ef39589d38c!2sAl%20Malqa%2C%20Riyadh%20Saudi%20Arabia!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"
               className="w-full flex-1 rounded-3xl border-0"
               allowFullScreen=""

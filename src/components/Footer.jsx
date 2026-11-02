@@ -21,7 +21,7 @@ export const Footer = () => {
             <div className="flex items-center gap-3">
               <img
                 src={isAr ? "/logo2.jpg" : "/logo.jpg"}
-                alt="Edinam Destiny Recruitment Agency logo"
+                alt="Destiny Recruitment Agency logo"
                 className="size-12 rounded-full border-2 border-accent object-cover"
               />
               <div>

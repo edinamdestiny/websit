@@ -9,15 +9,15 @@ export const BRAND_TAGLINE_AR = siteConfig.taglineAr;
 export const LOGO_URL = siteConfig.logoEn;
 export const LOGO_URL_AR = siteConfig.logoAr;
 
-export const getWhatsAppLink = (message = "مرحباً، أرغب في الاستفسار عن خدمات وكالة إيدينام ديستيني للتوظيف في الرياض") => {
+export const getWhatsAppLink = (message = "مرحباً، أرغب في الاستفسار عن خدمات وكالة ديستيني للتوظيف في الرياض") => {
   return `https://wa.me/${PHONE_CLEAN}?text=${encodeURIComponent(message)}`;
 };
 
 export const translations = {
   ar: {
-    brandName: "وكالة إيدينام ديستيني",
-    brandFull: "وكالة إيدينام ديستيني للتوظيف",
-    brandSub: "Edinam Destiny Recruitment Agency",
+    brandName: "وكالة ديستيني",
+    brandFull: "وكالة ديستيني للتوظيف",
+    brandSub: "Destiny Recruitment Agency",
     tagline: "أفضل الكوادر المنزلية المحترفة بين يديكِ",
     heroDesc: "توفير مربيات، طهاة، عاملات نظافة ومقدمي رعاية موثوقين من الفلبين وكينيا وأوغندا وغانا — بالساعة أو بالشهر في جميع أحياء الرياض.",
     bookWhatsApp: "تواصل عبر واتساب",
@@ -192,7 +192,7 @@ export const translations = {
         {
           name: "أم عبد الله التميمي",
           district: "حي الملقا، الرياض",
-          text: "تعاملنا مع وكالة إيدينام ديستيني لأكثر من سنة. المربية التي وفرتها لأطفالنا محترفة وأمينة وعطوفة — لا أبالغ إن قلت إنها جزء من العائلة.",
+          text: "تعاملنا مع وكالة ديستيني لأكثر من سنة. المربية التي وفرتها لأطفالنا محترفة وأمينة وعطوفة — لا أبالغ إن قلت إنها جزء من العائلة.",
           rating: 5,
           service: "مربية شهرية"
         },
@@ -253,7 +253,7 @@ export const translations = {
     },
 
     shop: {
-      title: "متجر وكالة إيدينام ديستيني",
+      title: "متجر وكالة ديستيني",
       subtitle: "باقات ساعات مسبقة الدفع ومستلزمات تنظيف منزلي فاخرة",
       allProducts: "جميع الباقات والمنتجات",
       bundles: "باقات الساعات الموفرة",
@@ -301,17 +301,17 @@ export const translations = {
     },
 
     footer: {
-      desc: "وكالة إيدينام ديستيني للتوظيف — شريككِ الموثوق في توفير أفضل الكوادر المنزلية المحترفة من مربيات وطهاة وعاملات نظافة ومقدمي رعاية في جميع أحياء الرياض.",
+      desc: "وكالة ديستيني للتوظيف — شريككِ الموثوق في توفير أفضل الكوادر المنزلية المحترفة من مربيات وطهاة وعاملات نظافة ومقدمي رعاية في جميع أحياء الرياض.",
       quickLinks: "روابط سريعة",
       legal: "الالتزام النظامي",
       crNumber: "مرخصون نظامياً وفق أنظمة وزارة الموارد البشرية في المملكة العربية السعودية",
-      copyright: "© 2026 وكالة إيدينام ديستيني للتوظيف · الرياض، المملكة العربية السعودية",
+      copyright: "© 2026 وكالة ديستيني للتوظيف · الرياض، المملكة العربية السعودية",
     }
   },
 
   en: {
-    brandName: "Edinam Destiny Agency",
-    brandFull: "Edinam Destiny Recruitment Agency",
+    brandName: "Destiny Agency",
+    brandFull: "Destiny Recruitment Agency",
     brandSub: "مربيات · طهاة · عاملات نظافة · رعاية",
     tagline: "Premium Domestic Talent, Right at Your Doorstep",
     heroDesc: "Professional Nannies, Cooks, Cleaners and Caregivers from Philippines, Kenya, Uganda and Ghana — hourly or monthly, across all Riyadh districts.",
@@ -487,7 +487,7 @@ export const translations = {
         {
           name: "Umm Abdullah Al Tamimi",
           district: "Al Malqa, Riyadh",
-          text: "We've worked with Edinam Destiny for over a year. The nanny they provided is wonderful with our children — professional, caring, and truly part of the family.",
+          text: "We've worked with Destiny Recruitment Agency for over a year. The nanny they provided is wonderful with our children — professional, caring, and truly part of the family.",
           rating: 5,
           service: "Monthly Nanny"
         },
@@ -548,7 +548,7 @@ export const translations = {
     },
 
     shop: {
-      title: "Edinam Destiny Shop & Packages",
+      title: "Destiny Agency Shop & Packages",
       subtitle: "Prepaid booking bundles and premium home sanitization products",
       allProducts: "All Products",
       bundles: "Prepaid Bundles",
@@ -596,11 +596,11 @@ export const translations = {
     },
 
     footer: {
-      desc: "Edinam Destiny Recruitment Agency — Your trusted partner for premium professional domestic staff including nannies, cooks, cleaners, and caregivers across Riyadh.",
+      desc: "Destiny Recruitment Agency — Your trusted partner for premium professional domestic staff including nannies, cooks, cleaners, and caregivers across Riyadh.",
       quickLinks: "Quick Links",
       legal: "Regulatory Compliance",
       crNumber: "Licensed and compliant with Saudi Ministry of Human Resources regulations.",
-      copyright: "© 2026 Edinam Destiny Recruitment Agency · Riyadh, Saudi Arabia",
+      copyright: "© 2026 Destiny Recruitment Agency · Riyadh, Saudi Arabia",
     }
   }
 };

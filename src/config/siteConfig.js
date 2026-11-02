@@ -1,5 +1,5 @@
 /**
- * Edinam Destiny Recruitment Agency — Central Site Configuration
+ * Destiny Recruitment Agency — Central Site Configuration
  * 
  * International Standard Codebase: Single Source of Truth
  * Edit company contact details, branding, services, and defaults here.
@@ -8,8 +8,8 @@
 
 export const siteConfig = {
   // Brand Names
-  name: "Edinam Destiny Recruitment Agency",
-  nameAr: "وكالة إيدينام ديستيني للتوظيف",
+  name: "Destiny Recruitment Agency",
+  nameAr: "وكالة ديستيني للتوظيف",
   tagline: "Nannies · Cooks · Cleaners · Caregivers",
   taglineAr: "مربيات · طهاة · عاملات نظافة · مقدمو رعاية",
   slogan: "Premium Domestic Staffing Solutions in Riyadh",
@@ -79,7 +79,7 @@ export const siteConfig = {
  * @returns {string} - WhatsApp URL
  */
 export const getWhatsAppLink = (customMessage = "") => {
-  const defaultText = "السلام عليكم، أود الاستفسار عن خدمات وكالة إيدينام ديستيني للتوظيف بالرياض";
+  const defaultText = "السلام عليكم، أود الاستفسار عن خدمات وكالة ديستيني للتوظيف بالرياض";
   const text = encodeURIComponent(customMessage || defaultText);
   return `https://wa.me/${siteConfig.whatsappNumber}?text=${text}`;
 };

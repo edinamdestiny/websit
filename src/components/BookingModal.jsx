@@ -87,7 +87,7 @@ export const BookingModal = () => {
 
     // Prepare WhatsApp Message
     const whatsappText = isAr
-      ? `طلب حجز خدمة جديد — وكالة إيدينام ديستيني للتوظيف بالرياض:\n\n` +
+      ? `طلب حجز خدمة جديد — وكالة ديستيني للتوظيف بالرياض:\n\n` +
         `👤 الاسم: ${bookingPayload.customerName}\n` +
         `📱 الجوال: ${bookingPayload.customerPhone}\n` +
         `🧹 الخدمة: ${bookingPayload.serviceType}\n` +
@@ -98,7 +98,7 @@ export const BookingModal = () => {
         `⏰ الفترة: ${bookingPayload.timeSlot}\n` +
         (notes ? `📝 ملاحظات: ${notes}\n` : '') +
         `\nأرجو تأكيد الحجز وموعد وصول الكادر.`
-      : `New Staff Booking Request — Edinam Destiny Recruitment Agency (Riyadh):\n\n` +
+      : `New Staff Booking Request — Destiny Recruitment Agency (Riyadh):\n\n` +
         `👤 Name: ${bookingPayload.customerName}\n` +
         `📱 Phone: ${bookingPayload.customerPhone}\n` +
         `🧹 Service: ${bookingPayload.serviceType}\n` +

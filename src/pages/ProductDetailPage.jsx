@@ -32,12 +32,12 @@ export const ProductDetailPage = ({ slug }) => {
   const handleOrderWhatsApp = () => {
     const total = product.price * quantity;
     const msg = isAr
-      ? `طلب شراء منتج — وكالة إيدينام ديستيني للتوظيف:\n` +
+      ? `طلب شراء منتج — وكالة ديستيني للتوظيف:\n` +
         `📦 المنتج: ${product.name}\n` +
         `🔢 الكمية: ${quantity}\n` +
         `💰 الإجمالي: ${total} ريال\n` +
         `أرجو تأكيد الطلب وتحديد موعد التوصيل.`
-      : `Product Purchase Order — Edinam Destiny Recruitment Agency:\n` +
+      : `Product Purchase Order — Destiny Recruitment Agency:\n` +
         `📦 Product: ${product.nameEn}\n` +
         `🔢 Quantity: ${quantity}\n` +
         `💰 Total: ${total} SAR\n` +

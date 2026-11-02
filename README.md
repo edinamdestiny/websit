@@ -1,5 +1,5 @@
-# 🌟 Edinam Destiny Recruitment Agency — Web Application
-> **وكالة إيدينام ديستيني للتوظيف بالرياض — مربيات · طهاة · عاملات نظافة · مقدمو رعاية**  
+# 🌟 Destiny Recruitment Agency — Web Application
+> **وكالة ديستيني للتوظيف بالرياض — مربيات · طهاة · عاملات نظافة · مقدمو رعاية**  
 > *A high-performance, lightweight, international-standard web application for domestic recruitment and hourly/monthly domestic staffing in Riyadh, Saudi Arabia.*
 
 ---
@@ -26,7 +26,7 @@
 
 ## 🎯 Overview
 
-**Edinam Destiny Recruitment Agency** is an ultra-fast, responsive web platform engineered specifically for the Saudi domestic recruitment and staffing market. It enables Riyadh families to effortlessly calculate pricing, browse verified domestic personnel CVs (Nannies, Cooks, Cleaners, Caregivers), and confirm bookings instantly via direct WhatsApp integration and phone calls.
+**Destiny Recruitment Agency** is an ultra-fast, responsive web platform engineered specifically for the Saudi domestic recruitment and staffing market. It enables Riyadh families to effortlessly calculate pricing, browse verified domestic personnel CVs (Nannies, Cooks, Cleaners, Caregivers), and confirm bookings instantly via direct WhatsApp integration and phone calls.
 
 ### Key Highlights:
 - 🚀 **Ultra-lightweight & Fast:** 0 heavy dependencies, pure React 18 + Vite + Tailwind CSS. Production bundle is ~92 KB gzipped.
@@ -181,8 +181,8 @@ email: "edinamdestiny@gmail.com",   // Official business email
 ### 2. Change Branding & Logo
 In `src/config/siteConfig.js`:
 ```javascript
-name: "Edinam Destiny Recruitment Agency",
-nameAr: "وكالة إيدينام ديستيني للتوظيف",
+name: "Destiny Recruitment Agency",
+nameAr: "وكالة ديستيني للتوظيف",
 tagline: "Nannies · Cooks · Cleaners · Caregivers",
 taglineAr: "مربيات · طهاة · عاملات نظافة · مقدمو رعاية",
 logoEn: "/logo.jpg",             // Placed in /public/
@@ -279,8 +279,8 @@ The root `index.html` includes official **Schema.org `EmploymentAgency`** struct
 {
   "@context": "https://schema.org",
   "@type": "EmploymentAgency",
-  "name": "Edinam Destiny Recruitment Agency",
-  "alternateName": "وكالة إيدينام ديستيني للتوظيف",
+  "name": "Destiny Recruitment Agency",
+  "alternateName": "وكالة ديستيني للتوظيف",
   "telephone": "+966556274859",
   "email": "edinamdestiny@gmail.com",
   "address": {
@@ -321,10 +321,10 @@ The project includes pre-configured Cloudflare optimizations:
 ```bash
 # In your project directory:
 git add .
-git commit -m "feat: complete edinam destiny recruitment platform"
+git commit -m "feat: complete destiny recruitment platform"
 
 # Link to your remote repository (replace with your GitHub repo URL):
-git remote add origin https://github.com/<your-username>/edinam-destiny.git
+git remote add origin https://github.com/<your-username>/destiny-recruitment-agency.git
 git branch -M main
 git push -u origin main
 ```
@@ -363,7 +363,7 @@ git push -u origin main
    server {
        listen 80;
        server_name your-domain.com;
-       root /var/www/edinam-destiny/dist;
+       root /var/www/destiny-recruitment-agency/dist;
        index index.html;
 
        location / {
@@ -386,5 +386,5 @@ git push -u origin main
 ---
 
 ## 📄 License & Ownership
-Copyright © 2026 **Edinam Destiny Recruitment Agency**. All rights reserved.  
+Copyright © 2026 **Destiny Recruitment Agency**. All rights reserved.  
 Compliant with Ministry of Human Resources and Social Development regulations in the Kingdom of Saudi Arabia.

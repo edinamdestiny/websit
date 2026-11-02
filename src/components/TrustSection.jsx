@@ -41,7 +41,7 @@ export const TrustSection = () => {
       <div className="mx-auto max-w-7xl">
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-sm font-bold tracking-widest text-accent-dark uppercase">
-            {isAr ? "لماذا وكالة إيدينام ديستيني؟" : "WHY EDINAM DESTINY RECRUITMENT AGENCY?"}
+            {isAr ? "لماذا وكالة ديستيني للتوظيف؟" : "WHY DESTINY RECRUITMENT AGENCY?"}
           </p>
           <h2 className="mt-3 font-display text-3xl sm:text-4xl md:text-5xl font-black text-primary">
             {isAr ? "معايير راقية لراحة وطمأنينة منزلك" : "Elite standards for your home's serenity"}

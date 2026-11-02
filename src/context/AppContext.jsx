@@ -205,7 +205,7 @@ export const AppProvider = ({ children }) => {
   const resetMaids = () => {
     setMaids(initialMaids);
     try {
-      localStorage.removeItem('sakana_maids');
+      localStorage.removeItem('destiny_maids_v2');
     } catch {}
   };
 

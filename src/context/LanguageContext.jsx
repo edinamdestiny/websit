@@ -6,7 +6,7 @@ const LanguageContext = createContext();
 export const LanguageProvider = ({ children }) => {
   const [lang, setLangState] = useState(() => {
     try {
-      const saved = localStorage.getItem('destiny_lang') || localStorage.getItem('sakana_lang');
+      const saved = localStorage.getItem('destiny_lang');
       return saved === 'en' ? 'en' : 'ar';
     } catch {
       return 'ar';

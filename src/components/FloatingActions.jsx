@@ -11,8 +11,8 @@ export const FloatingActions = () => {
   return (
     <aside
       aria-label={isAr ? "إجراءات سريعة للتواصل" : "Quick contact actions"}
-      className={`fixed bottom-5 z-40 flex flex-col gap-3 ${
-        isAr ? 'left-5 sm:left-8' : 'right-5 sm:right-8'
+      className={`fixed z-40 flex flex-col gap-3 bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))] ${
+        isAr ? 'left-4 sm:left-8' : 'right-4 sm:right-8'
       }`}
     >
       {/* Quick Booking Button */}

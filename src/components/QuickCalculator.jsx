@@ -67,10 +67,10 @@ export const QuickCalculator = () => {
           </div>
 
           {/* Service Type switcher */}
-          <div className="flex rounded-full bg-muted p-1 border border-border/40">
+          <div className="grid grid-cols-3 sm:flex rounded-full bg-muted p-1 border border-border/40 w-full sm:w-auto">
             <button
               onClick={() => setServiceType('hourly')}
-              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
+              className={`px-2 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all text-center ${
                 serviceType === 'hourly' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-primary'
               }`}
             >
@@ -78,7 +78,7 @@ export const QuickCalculator = () => {
             </button>
             <button
               onClick={() => setServiceType('monthly')}
-              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
+              className={`px-2 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all text-center ${
                 serviceType === 'monthly' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-primary'
               }`}
             >
@@ -86,7 +86,7 @@ export const QuickCalculator = () => {
             </button>
             <button
               onClick={() => setServiceType('deep')}
-              className={`px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
+              className={`px-2 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-bold transition-all text-center ${
                 serviceType === 'deep' ? 'bg-primary text-white shadow' : 'text-muted-foreground hover:text-primary'
               }`}
             >

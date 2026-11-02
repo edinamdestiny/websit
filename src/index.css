@@ -6,6 +6,8 @@
   html {
     scroll-behavior: smooth;
     font-family: 'Plus Jakarta Sans', 'Cairo', system-ui, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   [dir="rtl"] {
@@ -15,6 +17,21 @@
   body {
     @apply bg-[#F4F8F6] text-[#0D4734] antialiased;
     overflow-x: hidden;
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile browsers (iOS Safari & Android Chrome) */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent iOS Safari from auto-zooming into form fields when font-size < 16px */
+  @media (max-width: 768px) {
+    input, select, textarea {
+      font-size: 16px !important;
+    }
+  }
+
+  /* Optimize touch responsiveness and eliminate tap delays */
+  button, a, input, select, textarea {
+    touch-action: manipulation;
   }
 }
 

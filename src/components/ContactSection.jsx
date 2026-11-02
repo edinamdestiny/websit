@@ -155,7 +155,7 @@ export const ContactSection = () => {
           </div>
 
           {/* Riyadh Map Embed */}
-          <div className="overflow-hidden rounded-[2.5rem] border border-border bg-white p-3 shadow-soft h-[530px] flex flex-col">
+          <div className="overflow-hidden rounded-3xl sm:rounded-[2.5rem] border border-border bg-white p-3 shadow-soft h-[360px] sm:h-[530px] flex flex-col">
             <div className="px-4 py-2 flex items-center justify-between text-xs text-muted-foreground font-semibold">
               <span className="flex items-center gap-1.5 text-primary">
                 <Navigation className="size-3.5 text-teal" />

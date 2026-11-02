@@ -23,14 +23,16 @@ All contact details are managed in a single file:
 
 ```javascript
 export const siteConfig = {
-  // Update your display phone number
-  phone: "+966 59 829 3356",
+  // Primary Phone & WhatsApp
+  phone: "+966 55 627 4859",
+  whatsappNumber: "966556274859",
   
-  // Update your international WhatsApp number (country code + number, NO spaces, NO '+')
-  whatsappNumber: "966598293356",
+  // Secondary Phone & WhatsApp
+  phone2: "+966 54 482 7315",
+  whatsappNumber2: "966544827315",
   
-  // Update email address
-  email: "destinyrecruitment007@gmail.com",
+  // Official Business Email
+  email: "edinamdestiny@gmail.com",
   
   // Commercial Registration & License numbers
   crNumber: "CR 1010789452 · License #410294",
@@ -235,7 +237,7 @@ The app uses a lightweight custom SPA router built on standard browser history.
 **Fix:** Navigate to `/admin` and click the **"Reset Data"** (استعادة البيانات) button in the top right. Alternatively, clear your browser's application storage for `localhost`.
 
 ### Q: WhatsApp links do not open the correct chat.
-**Reason:** Check that `whatsappNumber` in `src/config/siteConfig.js` does NOT have any plus sign `+` or spaces (e.g. `966598293356` is correct; `+966 59 829 3356` will not work with `wa.me`).
+**Reason:** Check that `whatsappNumber` in `src/config/siteConfig.js` does NOT have any plus sign `+` or spaces (e.g. `966556274859` is correct; `+966 55 627 4859` will not work with `wa.me`).
 
 ### Q: How do I test the production build before uploading?
 Run:

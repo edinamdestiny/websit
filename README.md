@@ -170,10 +170,11 @@ All major settings are consolidated in **`src/config/siteConfig.js`**. You don't
 ### 1. Change Phone & WhatsApp
 Open `src/config/siteConfig.js` and edit:
 ```javascript
-phone: "+966 59 829 3356",       // Display format
-phoneRaw: "+966598293356",       // tel: link format
-whatsappNumber: "966598293356",  // WhatsApp wa.me format (no + or spaces)
-email: "your-email@example.com",
+phone: "+966 55 627 4859",          // Line 1 display
+phone2: "+966 54 482 7315",         // Line 2 display
+whatsappNumber: "966556274859",     // WhatsApp 1 wa.me format (no + or spaces)
+whatsappNumber2: "966544827315",    // WhatsApp 2 wa.me format (no + or spaces)
+email: "edinamdestiny@gmail.com",   // Official business email
 ```
 *Done! All WhatsApp booking links, call buttons, and footer links automatically update.*
 
@@ -280,7 +281,8 @@ The root `index.html` includes official **Schema.org `EmploymentAgency`** struct
   "@type": "EmploymentAgency",
   "name": "Edinam Destiny Recruitment Agency",
   "alternateName": "وكالة إيدينام ديستيني للتوظيف",
-  "telephone": "+966598293356",
+  "telephone": "+966556274859",
+  "email": "edinamdestiny@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Anas Ibn Malik Rd, Al Malqa District",
@@ -306,9 +308,40 @@ The application includes a built-in admin dashboard accessible at **`/admin`**:
 
 ## 🚢 Production Build & Deployment Guide
 
-The compiled app is a 100% static Single Page Application (SPA), meaning it can be hosted for free or low cost anywhere with maximum performance.
+The compiled app is a 100% static, ultra-compressed Single Page Application (SPA). Total git repository size is only **~712 KiB**, making it lightning-fast to push and deploy via Git CI/CD.
 
-### Option A: Vercel (Recommended)
+### Option A: Cloudflare Pages & Git (Recommended)
+
+The project includes pre-configured Cloudflare optimizations:
+- `public/_redirects`: Guarantees seamless client-side SPA routing (`/* /index.html 200`) across all subpages (`/maids`, `/shop`, `/admin`).
+- `public/_headers`: Enforces 1-year immutable caching (`max-age=31536000, immutable`) for compiled assets, fresh HTML revalidation, and modern security headers (`X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`).
+- `.nvmrc`: Locks Node.js runtime to version 20 for reproducible Cloudflare CI builds.
+
+#### Step 1: Push to GitHub / GitLab
+```bash
+# In your project directory:
+git add .
+git commit -m "feat: complete edinam destiny recruitment platform"
+
+# Link to your remote repository (replace with your GitHub repo URL):
+git remote add origin https://github.com/<your-username>/edinam-destiny.git
+git branch -M main
+git push -u origin main
+```
+
+#### Step 2: Connect to Cloudflare Pages
+1. Log in to your [Cloudflare Dashboard](https://dash.cloudflare.com/) and go to **Compute (Workers) > Pages**.
+2. Click **Connect to Git** and select your repository.
+3. Configure the build settings:
+   - **Framework preset:** `Vite` (or `None`)
+   - **Build command:** `npm run build`
+   - **Build output directory:** `dist`
+   - **Environment variables:**
+     - `NODE_VERSION` = `20`
+4. Click **Save and Deploy**.
+5. Within 30 seconds, your site will be live worldwide on Cloudflare's ultra-fast Edge CDN with 100% free SSL/TLS!
+
+### Option B: Vercel
 1. Push your repository to GitHub.
 2. Import the project into [Vercel](https://vercel.com).
 3. Framework Preset: **Vite**
@@ -316,23 +349,13 @@ The compiled app is a 100% static Single Page Application (SPA), meaning it can 
 5. Output Directory: `dist`
 6. Click **Deploy**.
 
-*For client-side SPA routing on Vercel, a `vercel.json` file can be added:*
-```json
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
-```
-
-### Option B: Netlify
+### Option C: Netlify
 1. Connect repository to [Netlify](https://netlify.com).
 2. Build command: `npm run build`
 3. Publish directory: `dist`
-4. Add a `_redirects` file in `public/`:
-   ```
-   /*    /index.html   200
-   ```
+4. The included `public/_redirects` will be automatically detected and applied.
 
-### Option C: Traditional Hosting (cPanel / Apache / Nginx)
+### Option D: Traditional Hosting (cPanel / Apache / Nginx)
 1. Run `npm run build` locally.
 2. Upload all files inside the `dist/` folder to your server's `public_html/`.
 3. If using **Nginx**, configure the fallback:

@@ -13,4 +13,4 @@ Allow: /
 Disallow: /admin
 
 # XML Sitemap
-Sitemap: https://destiny-recruitment-agency.pages.dev/sitemap.xml
+Sitemap: https://destiny-recrutment-agency.com/sitemap.xml

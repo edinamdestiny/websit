@@ -7,6 +7,10 @@
  */
 
 export const siteConfig = {
+  // Domain & URLs
+  domain: "destiny-recrutment-agency.com",
+  siteUrl: "https://destiny-recrutment-agency.com",
+
   // Brand Names
   name: "Destiny Recruitment Agency",
   nameAr: "وكالة ديستيني للتوظيف",
